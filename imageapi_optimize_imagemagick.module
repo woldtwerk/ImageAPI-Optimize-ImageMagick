@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function imageapi_optimize_imagemagick_entity_type_alter(array &$entityTypes) {
+  if (isset($entityTypes['imageapi_optimize_pipeline'])) {
+    $entityTypes['imageapi_optimize_pipeline']->setClass('Drupal\imageapi_optimize_imagemagick\Entity\ImageAPIOptimizeImageMagickPipeline');
+  }
+  return [];
+}

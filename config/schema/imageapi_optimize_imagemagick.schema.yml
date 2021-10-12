@@ -1,0 +1,28 @@
+imageapi_optimize_imagemagick.settings:
+  type: config_object
+  label: 'Image Optimize ImageMagick settings'
+  mapping:
+    quality:
+      type: integer
+      label: 'Quality'
+    exec:
+      type: text
+      label: 'Arguments'
+    density:
+      type: integer
+      label: 'Demsoty'
+    colorspace:
+      type: text
+      label: 'colorspace'
+    enable_webp:
+      type: boolean
+      label: 'Enable webp support'
+    webp_quality:
+      type: integer
+      label: 'WebP Quality'
+    avif_enable:
+      type: boolean
+      label: 'Avif'
+    avif_quality:
+      type: integer
+      label: 'Avif Quality'
